@@ -1,0 +1,145 @@
+body {
+    font-family: 'Montserrat';
+    background-color: #F5F7F8;
+    margin: 0;
+    color: #45474B;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+a {
+    background-color: goldenrod;
+    text-decoration: none;
+    color: white;
+    border-radius: .25rem;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+  }
+  
+  a:hover {
+    opacity: .6;
+  }
+
+#top {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top * {
+    padding: 3vw;
+}
+
+#name {
+    font-size: 5vh;
+    font-weight: bold;
+    color:#45474B;
+}
+
+
+#button-text {
+    text-align: center;
+    font-size:3vh;
+    border: 5px solid white;
+    background: 
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(60deg, #00f, #00e8ff) border-box;
+    border-radius:10px;
+    padding:15px;
+   
+    transition: transform 0.3s ease, border 0.3s ease;
+    box-shadow: 
+     /* Darker main shadow */
+      rgba(0, 0, 0, 0.5) 0px 4px 6px -2px;
+}
+
+#button:hover #button-text {
+    border: 5px solid transparent;
+    transform: scale(1.1);
+
+    
+}
+
+#title {
+    font-size: 4vh;
+    padding: 3vw;
+    color:#379777;
+}
+
+#list-wrapper {
+    padding:2em;
+    
+}
+
+
+#list-wrapper > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+#list-wrapper > ul > li {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+  }
+
+  #list-wrapper > ul > li > figure {
+    margin: 0;
+    max-height: 320px;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+  }
+
+  #list-wrapper > ul > li > figure > img {
+    width: 100%;
+  }
+
+  #list-wrapper  > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+  }
+
+  #list-wrapper  > ul > li > figure > figcaption > h3 {
+    color: white;
+    padding: .75rem;
+    font-size: 1.25rem;
+  }
+
+  #list-wrapper > ul > li > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem .75rem;
+    color: #666666;
+  }
+  
+  #list-wrapper > ul > li > a {
+    padding: .5rem 1rem;
+    margin: .5rem;
+  }
+
+  footer {
+    background-color: #333;
+    padding: .75rem;
+    color: white;
+    text-align: center;
+    font-size: .75rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+
+  
